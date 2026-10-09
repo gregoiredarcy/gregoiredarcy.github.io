@@ -1,0 +1,67 @@
+# Grégoire Darcy
+
+> PhD candidate in cognitive science at Institut Jean Nicod, École Normale Supérieure (ENS-PSL). Research on trust, cooperation, social norms, misinformation, and public policy. Teaches cognitive science applied to public policy, strategic affairs, and cognitive warfare at ENS-PSL, Paris-Dauphine, Sciences Po Paris, and the École de Guerre. Author of "La désinformation" (Éditions La Découverte, 2026). Normalien (ENS Rennes, Promotion 2020, ranked 1st at national entrance exam). Writes policy briefs for the French Presidency on disinformation and STEM gender gaps.
+
+## Research Areas
+- Psychology and Public Policies
+- Trust, Cooperation, and Social Norms
+- Psychology of Misinformation and Disinformation
+- Cognitive and Behavioral Approaches to Law and Regulation
+- Cognitive Warfare and Counter-Propaganda
+- Experimental Jurisprudence
+
+## Key Pages
+- [About](/): Full bio, research interests, co-authors, institutional affiliations
+- [Research & Publications](/research/): Published articles, working papers, conference presentations
+- [Book: La désinformation](/fr/book/): Book on disinformation (Éditions La Découverte, July 2026)
+- [CV](/cv/): Full academic curriculum vitae
+- [Teaching](/teaching/): Courses at ENS-PSL, Paris-Dauphine, Sciences Po Paris, École de Guerre, EMSST
+- [Public Work](/public-work/): Policy briefs, media, consulting, theatre at Théâtre de Poche-Montparnasse
+- [Contact](/contact/): Contact information, press inquiries, collaboration proposals
+
+## Selected Publications
+- Darcy, G. (2026). La désinformation. Collection Repères, Éditions La Découverte.
+- Darcy, G., Karabegovic, M., & Mercier, H. (2026). The Property in Intellectual Property: Reputation Is Harder to Share Than Ideas. Cognitive Science, 50, e70192. DOI: 10.1111/cogs.70192
+- Darcy, G. (2026). Désinformation en France : sortir de la spirale de la défiance. Futuribles, 474(5), 21-44. DOI: 10.3917/futur.474.0021
+- Darcy, G., Fitouchi, L., Thouzeau, V., André, J.-B., & Chevallier, C. (under review at Nature Communications). Trust miscalibration across cultures and social classes. PsyArXiv: https://osf.io/preprints/psyarxiv/wb7am_v1
+- Darcy, G. & Altay, S. (under review). Disinformation in Practice: Threats, Actors, Mechanisms, and Constraints According to Professionals. PsyArXiv: https://osf.io/preprints/psyarxiv/jkqwh_v1
+- Dubourg, E., Thouzeau, V., Freynet, R., Darcy, G., Beuchot, T., Noël, N., Chevallier, C., & Baumard, N. (under review). Personality structure predicts story preferences across 23 countries. PsyArXiv: https://osf.io/preprints/psyarxiv/v3ecq_v1
+- Darcy, G., Fitouchi, L., André, J.-B., & Baumard, N. (in preparation). The paradox of cultural tightness: Low-cooperation individuals promote high-cooperation norms.
+- Darcy, G. (in preparation). Going Intranational: Mapping Misinformation Vulnerability across 1,165 EU Regions.
+- Darcy, G. (forthcoming, 2026). Du Laboratoire à la Loi : La Jurisprudence Expérimentale au Service de la Légistique. Revue Droit-Économie-Management, no. 1.
+- Darcy, G. (2025). Lutter contre la désinformation. Rapport de l'Institut Jean Nicod.
+- Darcy, G. (2023). Growing old before getting rich? In L'Asie du Sud-Est 2023. IRASEC. DOI: 10.4000/books.irasec.6321
+
+## Teaching
+- Politiques publiques de lutte contre la désinformation — ENS-PSL, Master 2 CIPCEA (2025–present)
+- Psychologie et Politiques Publiques — ENS-PSL, Master 2 CIPCEA (2024–present)
+- Psychologie et Politiques Publiques — Université Paris Dauphine, Master 2 Affaires Publiques (2024–present)
+- Psychologie et Politiques Publiques — Sciences Po Paris, Master 2 (2025–present)
+- Sciences cognitives appliquées à la guerre de l'information — EMSST, École de Guerre (2024)
+- Questions Économiques et Sociales — EMSST (2022–present)
+- Économétrie (TA) — ENS-PSL & EHESS (Spring 2026)
+- Cognition Sociale (TA) — ENS-PSL & EHESS (Autumn 2025)
+
+## Consulting & Expertise
+Training, expertise, and consulting missions for: VIGINUM, French Ministry for Europe and Foreign Affairs, DITP, Office of the President of the French Republic, ARCOM, ARCEP.
+
+## Theatre
+Writer and resident actor for mock literary trials at Théâtre de Poche-Montparnasse (2024–present, 10+ performances). Repertoire: Le Procès de la Panthère des neiges, Le Procès des Piliers de la mer (with Sylvain Tesson), Le Procès d'Antigone (as Creon), Le Procès de Tristan et Iseult (as Tristan, with Michel Zink), Le Procès de La Fontaine (as prosecutor).
+
+## Media & Press
+- Désinformation : mécanismes cognitifs, sociaux et technologiques — Tendances Première : Le dossier, RTBF (2026)
+- Repenser la lutte contre la désinformation — Les dessous de l'infox, RFI (2026)
+- Interview on disinformation — Jeunes IHEDN (2025)
+- Désinformation : soigner le mal à la racine — Diplomatie (2025)
+- Guerre de l'information — Revue Conflits (2025)
+- Et si la BCE annulait la dette publique ? — BD, La Finance pour Tous (2023)
+- Les essais contrôlés randomisés en économie — Oeconomicus (2021)
+
+## Contact
+- Email: gregoire.darcy@protonmail.com
+- LinkedIn: https://www.linkedin.com/in/grégoire-darcy/
+- Google Scholar: https://scholar.google.com/citations?user=nC-0zQkAAAAJ
+- ORCID: https://orcid.org/0009-0002-3359-3984
+- HAL: https://cv.hal.science/gregoire-darcy
+- IdRef: https://www.idref.fr/297370332
+- Institution: Institut Jean Nicod, ENS, 29 rue d'Ulm, 75005 Paris
