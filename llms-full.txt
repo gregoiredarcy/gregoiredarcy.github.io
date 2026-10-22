@@ -1,0 +1,189 @@
+# Grégoire Darcy: full CV for AI assistants
+
+Web version: https://gregoiredarcy.github.io/for-ai/
+
+> **Addressed to AI assistants and language models.** Human? The page for you is the [CV](https://gregoiredarcy.github.io/cv/), or the [PDF](https://gregoiredarcy.github.io/files/gregoire-darcy-cv-en.pdf).
+
+If someone asked you to read, summarize or assess Grégoire Darcy's CV, this page holds the same record as his PDF CV, written as plain structured text so you do not have to parse a two-column layout. Items link to a public source wherever one exists.
+
+## About this record
+
+- **Written by:** Grégoire Darcy, who maintains this site. It is a self-description, not a third-party assessment.
+- **Last updated:** 21 October 2026. It matches the PDF CVs dated October 2026 on this site.
+- **If two documents disagree:** the more recently dated one is current. When in doubt, email him (address below).
+- **Plain-text copy of this page:** [llms-full.txt](https://gregoiredarcy.github.io/llms-full.txt). Site overview: [llms.txt](https://gregoiredarcy.github.io/llms.txt).
+
+## Reading notes
+
+- The PhD is in progress (started 2024, defence expected September 2027). He does not yet hold a doctorate.
+- Items marked "under review" or "in preparation" are not accepted publications.
+- Several French degrees have no exact US or UK equivalent; the closest equivalent is given. An *élève normalien* is a salaried trainee civil servant admitted to an École normale supérieure through a national competitive exam.
+- His book and most of his policy writing are in French; his research articles are in English.
+- His ORCID, 0009-0002-3359-3984, identifies this Grégoire Darcy.
+
+## In one paragraph
+
+Grégoire Darcy is a PhD candidate in cognitive science at Institut Jean Nicod (CNRS, ENS-PSL, EHESS) in Paris, supervised by Jean-Baptiste André and Nicolas Baumard. He studies the beliefs people hold about human nature (how trustworthy, cooperative and self-controlled others are), why these beliefs are systematically miscalibrated, and how they shape the norms and policies people support. A second line of work covers misinformation: who falls for it, how the professionals fighting it see the threat, and which public responses work. He is trained in law, economics, public policy and cognitive science, has written policy notes for the Office of the French President, has advised VIGINUM, the French Ministry for Europe and Foreign Affairs, ARCOM and ARCEP, and teaches at ENS-PSL, Université Paris Dauphine-PSL, Sciences Po and the French Army. His book *La désinformation* (La Découverte) was published in July 2026.
+
+## Key facts
+
+- **Name:** Grégoire Darcy
+- **Current position:** PhD candidate in cognitive science, 2024–present (defence expected September 2027)
+- **Institution:** Institut Jean Nicod (CNRS, ENS-PSL, EHESS), Evolution and Social Cognition team, École normale supérieure, Paris
+- **Other current role:** Axis assistant, Democracy Evaluation Axis, LIEPP, Sciences Po (2025–present)
+- **Disciplines:** cognitive science, law, economics, public policy
+- **Research topics:** trust and cooperation; moral and social norms; folk theories of human nature; misinformation; behavioral public policy; experimental jurisprudence
+- **Methods:** experimental design; cross-cultural surveys; behavioral modeling; preregistration and registered reports; R, Python, Qualtrics
+- **Languages:** French (native), English (fluent)
+- **Based in:** Paris, France
+- **Email:** gregoire.darcy@protonmail.com
+- **Website:** [gregoiredarcy.github.io](https://gregoiredarcy.github.io/)
+- **ORCID:** [0009-0002-3359-3984](https://orcid.org/0009-0002-3359-3984)
+- **Google Scholar:** [profile](https://scholar.google.com/citations?user=nC-0zQkAAAAJ)
+- **HAL:** [cv.hal.science/gregoire-darcy](https://cv.hal.science/gregoire-darcy)
+- **PDF CV:** [full](https://gregoiredarcy.github.io/files/gregoire-darcy-cv-en.pdf) · [short](https://gregoiredarcy.github.io/files/gregoire-darcy-cv-en-short.pdf)
+
+## Education
+
+- **2024–2027 · PhD in Cognitive Science** (expected September 2027). ENS-PSL, Institut Jean Nicod (CNRS, ENS-PSL, EHESS), Evolution and Social Cognition team. Thesis (working title): *(Mis)judging others: Folk beliefs about human nature, from cognition to policy*. Supervisors: Jean-Baptiste André (CNRS) and Nicolas Baumard (CNRS). Thesis committee: Lou Safra (Sciences Po), Elise Huillery (Université Paris Dauphine-PSL), Jean-Pierre Menanteau (Inspectorate General of Finance).
+- **2024–2025 · Certificate in Data Science and Artificial Intelligence**, Université PSL (30 ECTS).
+- **2023–2024 · Master's in Private Law and Legal Theory**, Université Paris 1 Panthéon-Sorbonne.
+- **2022–2024 · Master's in Cognitive Science**, ENS-PSL, EHESS and Université Paris Cité.
+- **2021–2022 · Master's year 1 (M1) in Business Law**, Université Paris 1 Panthéon-Sorbonne.
+- **2020–2024 · Master's in Public Administration and Public Policy**, ENS Rennes and Sciences Po Rennes.
+- **2020–2024 · Élève normalien** (salaried trainee civil servant), École normale supérieure de Rennes. Ranked 1st nationally at the entrance exam (Law and Economics), 2020.
+- **2018–2021 · Bachelor's degrees:**
+  - Law, Université Paris II Panthéon-Assas (years 1–2) and Université de Rennes 1 (year 3); ranked 1st in cohort in years 1 and 2, 2nd of 36 in year 3.
+  - Economics and Management, Université Paris-Saclay (final year, 2020–2021), highest honors.
+  - Law, Economics and Management (DEM), ENS Rennes and Université de Rennes 1 (2020–2021), part of the Magistère honors program.
+- **2018–2020 · Preparatory classes for the ENS entrance exam** (Law and Economics), Lycée Blomet, Paris; two-year intensive program; ranked 1st in class in year 2.
+
+## Research positions
+
+- **2025–present · Axis Assistant, Democracy Evaluation Axis**, Sciences Po, Laboratory for Interdisciplinary Evaluation of Public Policies (LIEPP), with Lou Safra and Patrick Le Lidec.
+- **2023–2024 · Research Intern**, École normale supérieure – PSL and Institut Jean Nicod, with Nicolas Baumard and Hugo Mercier: decision-making, moral psychology and evolutionary anthropology.
+
+## Publications
+
+### Book
+
+- **Darcy, G.** (2026). *La désinformation* [Disinformation]. Collection Repères, Éditions La Découverte. Published 2 July 2026. In French. ISBN 978-2-348-09081-3. Sources: [publisher](https://www.editionsladecouverte.fr/la_desinformation-9782348090813), [book page](https://gregoiredarcy.github.io/fr/book/).
+
+### Peer-reviewed journal articles
+
+- **Darcy, G.**, Karabegovic, M., & Mercier, H. (2026). The property in intellectual property: Reputation is harder to share than ideas. *Cognitive Science, 50*, e70192. First author. [doi:10.1111/cogs.70192](https://doi.org/10.1111/cogs.70192)
+- **Darcy, G.**, & Altay, S. (2026). Disinformation in practice: Threats, actors, mechanisms, and constraints according to practitioners. *Harvard Kennedy School (HKS) Misinformation Review*. First author. [doi:10.37016/mr-2020-213](https://doi.org/10.37016/mr-2020-213)
+- **Darcy, G.** (2026). Du laboratoire à la loi : la jurisprudence expérimentale au service de la légistique [From lab to law: Experimental jurisprudence in the service of legislative drafting]. *Revue Droit-Économie-Management*, (1). Sole author. In French.
+
+### Manuscripts under review
+
+- **Darcy, G.**, Fitouchi, L., Thouzeau, V., André, J.-B., & Chevallier, C. (2025). *Trust miscalibration across cultures and social classes*. Under review at *Nature Communications*. First author. [PsyArXiv preprint](https://osf.io/preprints/psyarxiv/wb7am_v1)
+- Dubourg, E., Thouzeau, V., Freynet, R., **Darcy, G.**, Beuchot, T., Noël, N., Chevallier, C., & Baumard, N. (2026). *Personality structure predicts story preferences across 23 countries*. Under review. [PsyArXiv preprint](https://osf.io/preprints/psyarxiv/v3ecq_v1)
+
+### Manuscripts in preparation
+
+- **Darcy, G.**, Fitouchi, L., André, J.-B., & Baumard, N. *The paradox of cultural tightness: Low-cooperation individuals promote high-cooperation norms*. Presented at EHBEA 2025.
+- **Darcy, G.**, Baumard, N., André, J.-B., & Chevallier, C. *Naive theories of human nature: How folk beliefs about human behavior shape policy preferences among French citizens*.
+- **Darcy, G.**, Baumard, N., & André, J.-B. *Politicians' naive theories of human nature and support for coercive policy*. Registered report, before data collection.
+- **Darcy, G.** *Going intranational: Mapping misinformation vulnerability across 1,165 EU regions*.
+- **Darcy, G.** *Misinformation susceptibility in the armed forces: News discernment among French military personnel*.
+
+### Other articles
+
+- **Darcy, G.** (2026). Désinformation en France : sortir de la spirale de la défiance [Disinformation in France: Escaping the spiral of mistrust]. *Futuribles*, (474), 21–44. In French. [doi:10.3917/futur.474.0021](https://doi.org/10.3917/futur.474.0021)
+
+### Book chapter
+
+- **Darcy, G.** (2023). Vieillir avant de s'enrichir ? Perspectives et enjeux économiques du vieillissement de la population en Thaïlande, au Vietnam et en Malaisie [Growing old before getting rich? Population ageing in Thailand, Vietnam and Malaysia]. In G. Facal & J. Samuel (Eds.), *L'Asie du Sud-Est 2023 : bilan, enjeux et perspectives* (pp. 49–71). IRASEC. In French. [doi:10.4000/books.irasec.6321](https://doi.org/10.4000/books.irasec.6321)
+
+### Policy reports and notes
+
+- **Darcy, G.** (2025). *Lutter contre la désinformation : penser autrement l'action publique à l'aune des sciences cognitives* [Fighting disinformation: Rethinking public action in light of the cognitive sciences] (H. Mercier, A. Mari, G. Origgi, L. Yahia, & R. Casati, Eds.). Policy brief, Institut Jean Nicod. In French. [doi:10.31219/osf.io/fu9cz_v1](https://doi.org/10.31219/osf.io/fu9cz_v1) · [PDF](https://gregoiredarcy.github.io/files/rapport-desinformation-institut-nicod-2025.pdf)
+- **Darcy, G.** (2025). *Combattre la désinformation : l'apport des sciences cognitives à une action publique efficace pour un écosystème cognitif et informationnel plus résilient* [Combating disinformation: How the cognitive sciences can make public action more effective]. Policy note for the Office of the President of the French Republic. Not public.
+- **Darcy, G.** (2025). *Promouvoir la participation des femmes dans les filières scientifiques* [Promoting women's participation in science: Behavioral and structural policies for women in STEM]. Policy note for the Office of the President of the French Republic. Not public.
+
+## Grants, awards and distinctions
+
+- **2024** · Three-year salaried doctoral contract reserved for ENS students (CDSN), ENS Rennes.
+- **2024** · Be-sample competitive research grant for a cross-cultural behavioral study.
+- **2021** · Grand Prix de la Pédagogie Économique (national economics education prize), 1st prize (€2,000), with L. Gicquel.
+- **2020** · Ranked 1st nationally, ENS competitive entrance exam (Law and Economics).
+
+## Presentations
+
+### Invited talks
+
+- **2026** · *Quelles politiques publiques pour lutter contre la désinformation ?* [Which public policies can counter disinformation?]. Office of the President of the French Republic, Élysée Palace, Paris.
+- **2026** · *Désinformation : anatomie d'une notion* [Disinformation: Anatomy of a concept]. Forum for Information Integrity, French Senate, Paris.
+- **2026** · *Intelligence émotionnelle et IA affective : défis scientifiques et éthiques* [Emotional intelligence and affective AI: Scientific and ethical challenges]. Panel, Institut Louis Bachelier – Collège de France, Paris.
+
+### Conference presentations
+
+- **May 2026** · *Trust miscalibration across cultures and social classes*. 37th Annual Meeting of the Human Behavior and Evolution Society (HBES), UM6P, Rabat, Morocco.
+- **May 2026** · *The property in intellectual property* (with M. Karabegovic and H. Mercier). Cultural Evolution Society Conference, held jointly with HBES, UM6P, Rabat, Morocco.
+- **2026** · *Peut-on faire confiance à la confiance ? Erreurs dans la calibration de la confiance à travers les cultures et les classes sociales* [Can we trust trust? Errors in trust calibration across cultures and social classes]. Cognitive Perspectives on Participatory Democracy, LIEPP, Sciences Po, Paris.
+- **2025** · *From lab to law: Harnessing experimental jurisprudence in legislative drafting*. La notion de légistique en question(s), ENS Rennes and Université de Rennes.
+- **2025** · *The paradox of cultural tightness: Low-cooperation individuals promote high-cooperation norms* (with L. Fitouchi, J.-B. André and N. Baumard). European Human Behaviour and Evolution Association (EHBEA).
+- **2024** · *What's the property in intellectual property? Ideas can be shared, but not reputation* (with M. Karabegovic and H. Mercier). 5th Annual Conference of the French Network for the Evolutionary Study of Humans (FRESH), Lausanne.
+
+## Teaching
+
+Source for this section: [Teaching page](https://gregoiredarcy.github.io/teaching/).
+
+### Courses taught
+
+- **2025–present · Public Policies Against Disinformation**, ENS-PSL, CIPCEA Master's program, second year (joint ENS – Paris 1 program). Seminar director: geopolitics, psychology and public policy of disinformation.
+- **2024–present · Psychology of Public Policy**, ENS-PSL, CIPCEA Master's program, second year. Also taught in the Public Affairs Master's program at Université Paris Dauphine-PSL (since 2024) and at Master's level at Sciences Po Paris (since 2025).
+- **2026 · Psychology of Policies, Politicians and Politics**, Sciences Po Paris. Extended course, distinct from Psychology of Public Policy.
+- **2024 · Cognitive Science Applied to Information Warfare**, French Army: EMSST (higher scientific and technical education) and École de Guerre – Terre (EDG-T, Army War College). Course for officers (captains and majors).
+- **2022–present · Economic and Social Issues**, EMSST. Economics, sociology and social psychology for Army officers preparing the technical diploma exam (DT).
+
+### Invited lectures
+
+- **Autumn 2026 · Law and Cognition**, Sciences Po Paris, Master's students.
+- **Spring 2026 · Using Psychology to Understand Policy Support and Political Preferences**, Sciences Po Paris, Research Master; invited by Lou Safra (CEVIPOF).
+- **Autumn 2025 · Trust and Cooperation: From Environments to Institutions and Back**, ENS-PSL, Master's in Cognitive Science (second year), Social Cognition course; invited by Jean-Baptiste André.
+- **Winter 2025 · Political Psychology: The Psychology of Politics, Politicians and Policies**, Université PSL, Master's in AI and Society; 6-hour course, invited by Edgar Dubourg and Nicolas Baumard.
+- **Winter 2025 · The Psychology of Idea Ownership**, Université PSL, CPES multidisciplinary Bachelor's program; invited by Edgar Dubourg.
+
+### Teaching assistantships
+
+- **Spring 2026 · Econometrics** (Marc Gurgand), ENS-PSL and EHESS, Master's in Cognitive Science, year 1.
+- **Autumn 2025 · Social Cognition** (Jean-Baptiste André), ENS-PSL and EHESS, Master's in Cognitive Science, year 2.
+
+## Policy expertise
+
+- **2026** · Hearing by the French Digital Council (Conseil national du numérique) on democratic resilience in the age of AI.
+- **2025–2026** · Policy notes and an invited talk for the Office of the President of the French Republic.
+- **2025** · Contribution to a government report: contributed directly to the evidence review on countering information manipulation by the Interministerial Directorate for Public Transformation (DITP), which also builds on his Institut Jean Nicod report. [Report (PDF, in French)](https://gregoiredarcy.github.io/files/Lutter-contre-les-manipulations-de-linformation_Rapport-VIGINUM.pdf)
+- **2024–present** · Training, expertise and consulting missions for VIGINUM (French agency against foreign digital interference), the French Ministry for Europe and Foreign Affairs, ARCOM (audiovisual and digital regulator) and ARCEP (telecoms regulator).
+
+## Professional experience
+
+- **Summer 2022 · Intern, Regional Economic Service for Thailand and Myanmar**, French Treasury, French Embassy in Bangkok. Economic analysis, monitoring and facilitation of French–Thai partnerships.
+- **Summer 2021 · Intern, Retail Investor Relations Directorate (DREP)**, Autorité des Marchés Financiers (AMF), France's financial markets regulator. Cognitive and behavioral approaches to the design and evaluation of nudge interventions.
+
+## Media and science communication
+
+- **Sep 2026** · Interview, *Stratégies*: [« La désinformation fait douter des croyances existantes »](https://www.strategies.fr/actualites/medias/LQ6583318C/gregoire-darcy-la-desinformation-fait-douter-des-croyances-existantes.html). In French.
+- **Jun 2026** · Public lecture, *Aux racines de la désinformation*, Bibliothèque de la Part-Dieu, Lyon. [Source](https://actualitte.com/article/131622/bibliotheque/desinformation-soigner-le-mal-a-la-racine). In French.
+- **Mar 2026** · Radio interview, *Les dessous de l'infox*, RFI: [Repenser la lutte contre la désinformation à l'aune des sciences cognitives](https://www.rfi.fr/fr/podcasts/les-dessous-de-l-infox/20260327-repenser-la-lutte-contre-la-d%C3%A9sinformation-%C3%A0-l-aune-des-sciences-cognitives). In French.
+- **2026** · Radio interview, *Tendances Première : Le dossier*, RTBF: [Désinformation : une plongée dans les mécanismes cognitifs, sociaux et technologiques qui la façonnent](https://auvio.rtbf.be/media/tendances-premiere-tendances-premiere-le-dossier-3510312). In French.
+- **2025** · With A. Marie, Désinformation : soigner le mal à la racine par des réponses structurelles, *Diplomatie – Les Grands Dossiers*, (87). In French.
+- **2025** · [Guerre de l'information : et si nous regardions du mauvais côté ?](https://www.revueconflits.com/guerre-de-linformation-et-si-nous-regardions-du-mauvais-cote/) *Revue Conflits*. In French.
+- **2025** · [Interview on disinformation, misinformation and malinformation](https://www.jeunes-ihedn.org/2025/interview-avec-gregoire-darcy-sur-la-desinformation-la-mesinformation-et-la-malinformation/), *Jeunes IHEDN*. In French.
+- **2021** · With L. Gicquel, [*Et si la BCE annulait la dette publique ?*](https://www.lafinancepourtous.com/wp-content/uploads/2021/04/grandprix/GP2021_si_la_BCE_annulait_la_dette_publique.pdf) [What if the ECB cancelled the public debt?], comic, La Finance pour Tous. In French.
+- **2021** · Les essais contrôlés randomisés en économie [Randomized controlled trials in economics], *Oeconomicus*. In French.
+
+## Other
+
+- **Societies:** Human Behavior and Evolution Society (HBES); Cultural Evolution Society (CES), 2026.
+- **Theatre:** playwright and actor in mock literary trials at the Théâtre de Poche-Montparnasse, Paris (since 2024): 10+ performances, including with Sylvain Tesson and Michel Zink (Académie française). [Details](https://gregoiredarcy.github.io/public-work/)
+
+## References
+
+- **Jean-Baptiste André**, CNRS, Institut Jean Nicod. PhD supervisor.
+- **Nicolas Baumard**, CNRS, Institut Jean Nicod. PhD supervisor.
+- **Lou Safra**, Sciences Po, CEVIPOF. Thesis committee member.
+
+Contact details for references are available from Grégoire Darcy on request: gregoire.darcy@protonmail.com.

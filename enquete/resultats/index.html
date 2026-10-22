@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light">
+<title>Vos résultats – enquête sur les comportements des Français</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+@font-face{font-family:"Inter";src:url("inter-normal-latin.woff2") format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Source Serif 4";src:url("source-serif-4-normal-latin.woff2") format("woff2");font-weight:200 900;font-display:swap}
+:root{
+  --ink:#18202e;--muted:#566074;--faint:#8c94a5;--line:#e6e9ef;--soft:#f6f7fa;--page:#f2f3f6;--card:#ffffff;
+  --you:#1f6fb2;--you-soft:#e3eef8;--truth:#c2410c;--truth-soft:#fbe9df;--track:#dde1e8;--gap:#b8c0cd;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:15.5px/1.5 "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px 56px}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:5;background:rgba(242,243,246,.92);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.top .in{max-width:980px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand strong{color:var(--ink);font-weight:600}
+.btn{appearance:none;border:0;border-radius:999px;background:var(--ink);color:#fff;font:600 14px/1 inherit;font-family:inherit;padding:10px 16px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.btn:hover{background:#000}
+.btn:focus-visible{outline:3px solid #9cc3e6;outline-offset:2px}
+.btn svg{width:16px;height:16px}
+
+/* hero */
+.hero{padding:40px 0 8px}
+.kicker{font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(28px,4.4vw,40px);line-height:1.12;margin:0 0 14px;letter-spacing:-.01em;text-wrap:balance}
+.lede{font-size:17px;color:var(--muted);margin:0;max-width:62ch}
+.howto{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;margin:22px 0 0;padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:12px;font-size:14px;color:var(--muted)}
+.howto b{color:var(--ink);font-weight:600}
+.key{display:inline-flex;align-items:center;gap:8px}
+.k-you{width:12px;height:12px;border-radius:50%;background:var(--you);box-shadow:0 0 0 2px #fff,0 0 0 3px var(--you)}
+.k-tru{width:11px;height:11px;background:var(--truth);transform:rotate(45deg)}
+.alert{background:#fff7e6;border:1px solid #f0d49c;border-radius:12px;padding:12px 16px;margin:16px 0 0;font-size:14.5px}
+.alert.ok{background:#eaf3fb;border-color:#b9d4ec}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+.toc a{font-size:13.5px;text-decoration:none;color:var(--muted);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+.toc a:hover{color:var(--ink);border-color:#cfd5df}
+
+/* sections */
+section{margin-top:28px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px 6px}
+.sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h2{font-family:var(--serif);font-weight:600;font-size:24px;margin:0}
+.count{font-size:13px;color:var(--faint)}
+.sub{color:var(--muted);font-size:14.5px;margin:4px 0 6px}
+
+.grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr) 168px;column-gap:28px;align-items:center}
+.axis{padding:10px 0 8px;border-bottom:1px solid var(--line);font-size:11.5px;color:var(--faint);letter-spacing:.03em;text-transform:uppercase}
+.axis .scale{position:relative;height:14px}
+.axis .scale span{position:absolute;transform:translateX(-50%);text-transform:none;letter-spacing:0;font-variant-numeric:tabular-nums}
+.axis .scale span:first-child{transform:none}
+.axis .scale span:last-child{transform:translateX(-100%)}
+
+.item{padding:14px 0;border-bottom:1px solid var(--line)}
+.item:last-child{border-bottom:0}
+.label{font-weight:600;line-height:1.35}
+.period{font-weight:400;color:var(--muted)}
+.src{display:block;margin-top:3px;font-size:13px;color:var(--faint);line-height:1.35}
+.src a{color:#344e78;text-decoration:underline;text-decoration-color:#9fb0c8;text-underline-offset:2px;word-break:break-word}
+.src a::after{content:"\2009\2197";text-decoration:none;display:inline-block}
+.src a:hover{color:var(--ink);text-decoration-color:currentColor}
+
+/* chart */
+.chart{position:relative;height:30px}
+.chart .tr{position:absolute;left:0;right:0;top:14px;height:2px;background:var(--track);border-radius:2px}
+.chart .tk{position:absolute;top:10px;width:1px;height:10px;background:var(--track)}
+.chart .gap{position:absolute;top:13px;height:4px;background:var(--gap);border-radius:2px;opacity:.55}
+.chart .m{position:absolute;top:15px}
+.chart .y{width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:var(--you);box-shadow:0 0 0 2px #fff}
+.chart .t{width:12px;height:12px;margin:-6px 0 0 -6px;background:var(--truth);transform:rotate(45deg);box-shadow:0 0 0 2px #fff}
+.chart .t.big{width:20px;height:20px;margin:-10px 0 0 -10px}
+.chart.cat .cl{position:absolute;top:21px;font-size:11px;color:var(--faint);transform:translateX(-50%);white-space:nowrap}
+.chart.cat .cl:first-of-type{transform:none}
+.chart.cat{height:36px}
+.chart.cat .tr{top:10px}.chart.cat .tk{top:6px}.chart.cat .m{top:11px}.chart.cat .gap{top:9px}
+
+/* values */
+.vals{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;font-size:13px;align-items:baseline}
+.vals dt{color:var(--faint)}
+.vals dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.vals .vy{color:var(--you)} .vals .vt{color:var(--truth)}
+.vals .na{color:var(--faint);font-weight:400;font-style:italic}
+
+footer{margin-top:32px;font-size:13.5px;color:var(--muted)}
+footer p{margin:0 0 10px;max-width:76ch}
+
+@media (max-width:760px){
+  .wrap{padding-bottom:40px}
+  .hero{padding-top:28px}
+  section{padding:18px 16px 4px;border-radius:12px}
+  .grid{grid-template-columns:1fr;row-gap:8px}
+  .axis{display:none}
+  .chart{margin-top:2px}
+  .vals{grid-template-columns:auto auto auto auto;justify-content:start;gap:2px 8px}
+  .vals dd{text-align:left;margin-right:14px}
+  .brand .long{display:none}
+}
+@media print{
+  @page{size:A4;margin:12mm}
+  body{background:#fff;font-size:10.5pt}
+  .top,.toc,.alert,.howto .btn{display:none}
+  .wrap{max-width:none;padding:0}
+  section{border:0;padding:0;margin-top:18px;break-inside:auto}
+  .item{break-inside:avoid}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<div class="top"><div class="in">
+  <div class="brand"><strong>Vos résultats</strong><span class="long"> · Enquête sur les comportements des Français</span></div>
+  <button class="btn" id="pdf" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>Télécharger le PDF</button>
+</div></div>
+<div class="wrap">
+<header class="hero">
+  <p class="kicker">École normale supérieure · Institut Jean Nicod</p>
+  <h1>Vos réponses et les données réelles</h1>
+  <p class="lede">Merci d’avoir participé à notre enquête. Pour chaque question, voici votre estimation, la valeur réelle et la source d’où elle vient.</p>
+  <div class="howto">
+    <span class="key"><span class="k-you"></span><b>Votre estimation</b></span>
+    <span class="key"><span class="k-tru"></span><b>Données réelles</b></span>
+    <span>Plus les deux repères sont éloignés, plus l’écart est grand.</span>
+  </div>
+  <div class="alert" id="warn" hidden></div>
+  <div class="alert ok" id="dlnote" role="status" hidden></div>
+  <nav class="toc" id="toc" aria-label="Sections"></nav>
+</header>
+<main id="mount"></main>
+<footer>
+  <p>Les données réelles proviennent d’enquêtes et d’études publiées ; certaines reposent sur des déclarations des personnes interrogées. Cliquez sur une source pour consulter le document d’origine.</p>
+  <p><strong>Confidentialité.</strong> Vos estimations sont contenues dans le lien de cette page, après le signe « # ». Cette partie du lien n’est jamais envoyée au serveur : la page et le PDF sont produits dans votre navigateur, et rien n’est transmis ni enregistré. Le lien reste dans l’historique de votre navigateur.</p>
+  <p>Contact : Grégoire Darcy, <a href="mailto:gregoire.darcy@protonmail.com">gregoire.darcy@protonmail.com</a></p>
+</footer>
+</div>
+<script src="jspdf.umd.min.js" defer></script>
+<script>
+(function(){
+  "use strict";
+  // Benchmark values per version of the link (v=…). Generated from benchmarks.csv; never edit an existing version.
+  var DATA = {"1": [{"code": "C1", "domain": "coop", "format": "pct", "label": "Portefeuilles rendus (avec l'argent)", "src": "Cohn et al., Science", "year": "2019", "url": "https://www.science.org/doi/10.1126/science.aau8712", "truth": 58.0, "period": ""}, {"code": "C2", "domain": "coop", "format": "pct", "label": "Dons réguliers à des associations", "src": "Le Don en Confiance / Viavoice, Baromètre de la confiance 2024", "year": "2024", "url": "https://www.donenconfiance.org/offres/file_inline_src/759/759_P_37784_6746ea0ad4eef_4.pdf", "truth": 44.0, "period": ""}, {"code": "C3", "domain": "coop", "format": "pct", "label": "Fraude détectée parmi les allocataires contrôlés", "src": "CNAF, dossier de presse 5 mai 2025", "year": "2025", "url": "https://www.caf.fr/sites/default/files/medias/cnaf/Nous_connaitre/Presse/2025/250505%20DPLa%20lutte%20contre%20la%20fraude%20%C3%A0%20la%20Caf%20%C3%A9volue%20avec%20la%20solidarit%C3%A9%20%C3%A0%20la%20source%20et%20le%20SNLFE.pdf", "truth": 0.77, "period": ""}, {"code": "C4", "domain": "coop", "format": "pct", "label": "Fraude dans le métro et le RER (lignes RATP)", "src": "Île-de-France Mobilités, communiqué 13 février 2025", "year": "2025", "url": "https://presse.iledefrance-mobilites.fr/lancement-du-plan-contre-la-fraude-dans-les-transports-en-commun-franciliens/?lang=fr", "truth": 4.8, "period": ""}, {"code": "C5", "domain": "coop", "format": "pct", "label": "SMS/mails au volant", "src": "Ipsos pour Fondation VINCI Autoroutes, Baromètre de la conduite responsable 2025", "year": "2025", "url": "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-05/Ipsos_Fondation_Vinci_Autoroutes-Barometre_Conduite_Responsable_France_2025.pdf", "truth": 29.0, "period": ""}, {"code": "C6", "domain": "coop", "format": "pct", "label": "Tri des emballages et papiers", "src": "Citeo / Ipsos, Observatoire du geste de tri", "year": "2025", "url": "https://citoyens.citeo.com/le-mag/infographie-chiffres-recyclages-2024/", "truth": 89.0, "period": ""}, {"code": "C7", "domain": "coop", "format": "pct", "label": "Dons à une personne sans domicile fixe", "src": "Petit et al., PLoS ONE (HOME-EU)", "year": "2019", "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0221896", "truth": 59.0, "period": ""}, {"code": "C8", "domain": "coop", "format": "pct", "label": "Bénévolat associatif régulier", "src": "France Bénévolat / IFOP, 6e Baromètre du bénévolat", "year": "2025", "url": "https://www.francebenevolat.org/sites/default/files/u19/synth%C3%A8se%20Barom%C3%A8tre%20France%20B%C3%A9n%C3%A9volat%202025.pdf", "truth": 15.1, "period": ""}, {"code": "SC1", "domain": "selfcontrol", "format": "pct", "label": "Bonnes résolutions tenues", "src": "FFEPGV / Ipsos, 14e Baromètre Sport-Santé, communiqué du 20 décembre 2024", "year": "2024", "url": "https://sportsante.fr/wp-content/uploads/2025/01/CP_FFEPGV_2024-12-20_Resolutions-des-francais-2025_14e-Barometre-Sport-Sante-FFEPGV-IPSOS.pdf", "truth": 55.0, "period": ""}, {"code": "SC2", "domain": "selfcontrol", "format": "pct", "label": "Consommation quotidienne d’alcool", "src": "OFDT, EROPP 2023", "year": "2023", "url": "https://www.ofdt.fr/alcool-synthese-des-connaissances-1722", "truth": 7.0, "period": ""}, {"code": "SC3", "domain": "selfcontrol", "format": "pct", "label": "Activité physique régulière de loisir", "src": "Santé publique France, Baromètre 2024", "year": "2024", "url": "https://www.santepubliquefrance.fr/sites/default/files/rdd/document/907116_spf00006371.pdf", "truth": 40.2, "period": ""}, {"code": "SC4", "domain": "selfcontrol", "format": "pct", "label": "Plus de 3 h d’écrans par jour (loisirs)", "src": "Santé publique France, Baromètre 2021", "year": "2021", "url": "https://beh.santepubliquefrance.fr/beh/2024/12/2024_12_1.html", "truth": 39.0, "period": ""}, {"code": "SC5", "domain": "selfcontrol", "format": "pct", "label": "Dry January (parmi les consommateurs d’alcool)", "src": "Toluna Harris Interactive pour Défi de janvier 2026", "year": "2026", "url": "https://addictions-france.org/presse/defi-de-janvier-2026-une-reussite-collective-1-francais-sur-3-consommant-de-l-alcool-l-a-releve-cette-annee/", "truth": 29.0, "period": ""}, {"code": "SC6", "domain": "selfcontrol", "format": "pct", "label": "Jeux d’argent au moins mensuels", "src": "OFDT, EROPP 2023 jeux d'argent", "year": "2023", "url": "https://www.ofdt.fr/sites/ofdt/files/2024-12/rapport-eropp-jah-2023.pdf", "truth": 24.46, "period": ""}, {"code": "MD1", "domain": "moral", "format": "trend", "label": "Taux d’homicides volontaires", "src": "UNODC / Banque mondiale", "year": "2023", "url": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5?locations=FR", "truth": "b", "period": "2003–2023"}, {"code": "MD2", "domain": "moral", "format": "trend", "label": "Vols de véhicules", "src": "SSMSI / Ministère de l'Intérieur", "year": "2025", "url": "https://www.interieur.gouv.fr/Interstats/Actualites/Insecurite-et-delinquance-en-2024-bilan-statistique-et-atlas-departemental", "truth": "b", "period": "2004–2024"}, {"code": "MD3", "domain": "moral", "format": "trend", "label": "Donneurs de sang", "src": "Santé publique France / EFS, donneurs de sang 1992–2024", "year": "2025", "url": "https://www.santepubliquefrance.fr/sites/default/files/rdd/document/Surveillance_donneurs_1992_2024.pdf", "truth": "s", "period": "2004–2024"}, {"code": "MD4", "domain": "moral", "format": "trend", "label": "Bénévolat associatif des 15–34 ans", "src": "France Bénévolat / IFOP, Baromètre 2010–2025", "year": "2025", "url": "https://www.francebenevolat.org/sites/default/files/u19/synth%C3%A8se%20Barom%C3%A8tre%20France%20B%C3%A9n%C3%A9volat%202025.pdf", "truth": "h", "period": "2010–2025"}, {"code": "MD5", "domain": "moral", "format": "trend", "label": "Cannabis chez les jeunes de 17 ans", "src": "OFDT ESCAPAD 2022", "year": "2023", "url": "https://www.ofdt.fr/publication/2023/les-drogues-17-ans-analyse-de-l-enquete-escapad-2022-562", "truth": "b", "period": "2002–2022", "fem": 1}, {"code": "MD6", "domain": "moral", "format": "trend", "label": "Alcool dans le mois chez les jeunes de 17 ans", "src": "OFDT ESCAPAD 2022", "year": "2023", "url": "https://www.ofdt.fr/publication/2023/les-drogues-17-ans-analyse-de-l-enquete-escapad-2022-562", "truth": "b", "period": "2002–2022", "fem": 1}],
+    "2": [{"code": "C1", "domain": "coop", "format": "pct", "label": "Portefeuilles rendus (avec l'argent)", "src": "Cohn et al., Science", "year": "2019", "url": "https://www.science.org/doi/10.1126/science.aau8712", "truth": 58.0, "period": ""}, {"code": "C2", "domain": "coop", "format": "pct", "label": "Dons réguliers à des associations", "src": "Le Don en Confiance / Viavoice, Baromètre de la confiance 2024", "year": "2024", "url": "https://www.donenconfiance.org/offres/file_inline_src/759/759_P_37784_6746ea0ad4eef_4.pdf", "truth": 44.0, "period": ""}, {"code": "C3", "domain": "coop", "format": "pct", "label": "Fraude détectée parmi les allocataires contrôlés", "src": "CNAF, dossier de presse 5 mai 2025", "year": "2025", "url": "https://www.caf.fr/sites/default/files/medias/cnaf/Nous_connaitre/Presse/2025/250505%20DPLa%20lutte%20contre%20la%20fraude%20%C3%A0%20la%20Caf%20%C3%A9volue%20avec%20la%20solidarit%C3%A9%20%C3%A0%20la%20source%20et%20le%20SNLFE.pdf", "truth": 0.77, "period": ""}, {"code": "C4", "domain": "coop", "format": "pct", "label": "Fraude dans le métro et le RER (lignes RATP)", "src": "Île-de-France Mobilités, communiqué 13 février 2025", "year": "2025", "url": "https://presse.iledefrance-mobilites.fr/lancement-du-plan-contre-la-fraude-dans-les-transports-en-commun-franciliens/?lang=fr", "truth": 4.8, "period": ""}, {"code": "C5", "domain": "coop", "format": "pct", "label": "SMS/mails au volant", "src": "Ipsos pour Fondation VINCI Autoroutes, Baromètre de la conduite responsable 2025", "year": "2025", "url": "https://www.ipsos.com/sites/default/files/ct/news/documents/2025-05/Ipsos_Fondation_Vinci_Autoroutes-Barometre_Conduite_Responsable_France_2025.pdf", "truth": 29.0, "period": ""}, {"code": "C6", "domain": "coop", "format": "pct", "label": "Tri des emballages et papiers", "src": "Citeo / Ipsos, Observatoire du geste de tri", "year": "2024", "url": "https://citoyens.citeo.com/wp-content/uploads/2025/11/202502_CITEO_INFOGRAPHIE_IDEES-RECUES.pdf", "truth": 86.0, "period": ""}, {"code": "C7", "domain": "coop", "format": "pct", "label": "Dons à une personne sans domicile fixe", "src": "Petit et al., PLoS ONE (HOME-EU)", "year": "2019", "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0221896", "truth": 59.0, "period": ""}, {"code": "C8", "domain": "coop", "format": "pct", "label": "Bénévolat associatif régulier", "src": "France Bénévolat / IFOP, 6e Baromètre du bénévolat", "year": "2025", "url": "https://www.creditmutuel.com/partage/fr/CNCM/telechargements/etude-barometre-france-benevolat-2025.pdf", "truth": 15.1, "period": ""}, {"code": "SC1", "domain": "selfcontrol", "format": "pct", "label": "Bonnes résolutions tenues", "src": "FFEPGV / Ipsos, 14e Baromètre Sport-Santé, communiqué du 20 décembre 2024", "year": "2024", "url": "https://sportsante.fr/wp-content/uploads/2025/01/CP_FFEPGV_2024-12-20_Resolutions-des-francais-2025_14e-Barometre-Sport-Sante-FFEPGV-IPSOS.pdf", "truth": 55.0, "period": ""}, {"code": "SC2", "domain": "selfcontrol", "format": "pct", "label": "Consommation quotidienne d’alcool", "src": "OFDT, EROPP 2023", "year": "2023", "url": "https://www.ofdt.fr/alcool-synthese-des-connaissances-1722", "truth": 7.0, "period": ""}, {"code": "SC3", "domain": "selfcontrol", "format": "pct", "label": "Activité physique régulière de loisir", "src": "Santé publique France, Baromètre 2024", "year": "2024", "url": "https://www.santepubliquefrance.fr/sites/default/files/rdd/document/907116_spf00006371.pdf", "truth": 40.2, "period": ""}, {"code": "SC4", "domain": "selfcontrol", "format": "pct", "label": "Plus de 3 h d’écrans par jour (loisirs)", "src": "Santé publique France, Baromètre 2021", "year": "2021", "url": "https://beh.santepubliquefrance.fr/beh/2024/12/2024_12_1.html", "truth": 39.0, "period": ""}, {"code": "SC5", "domain": "selfcontrol", "format": "pct", "label": "Dry January (parmi les consommateurs d’alcool)", "src": "Toluna Harris Interactive pour Défi de janvier 2026", "year": "2026", "url": "https://addictions-france.org/presse/defi-de-janvier-2026-une-reussite-collective-1-francais-sur-3-consommant-de-l-alcool-l-a-releve-cette-annee/", "truth": 29.0, "period": ""}, {"code": "SC6", "domain": "selfcontrol", "format": "pct", "label": "Jeux d’argent au moins mensuels", "src": "OFDT, EROPP 2023 jeux d'argent", "year": "2023", "url": "https://www.ofdt.fr/sites/ofdt/files/2024-12/rapport-eropp-jah-2023.pdf", "truth": 24.46, "period": ""}, {"code": "MD1", "domain": "moral", "format": "trend", "label": "Taux d’homicides volontaires", "src": "UNODC / Banque mondiale", "year": "2023", "url": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5?locations=FR", "truth": "b", "period": "2003–2023"}, {"code": "MD2", "domain": "moral", "format": "trend", "label": "Vols de véhicules", "src": "SSMSI / Ministère de l'Intérieur", "year": "2025", "url": "https://www.interieur.gouv.fr/Interstats/Actualites/Insecurite-et-delinquance-en-2024-bilan-statistique-et-atlas-departemental", "truth": "b", "period": "2004–2024"}, {"code": "MD3", "domain": "moral", "format": "trend", "label": "Donneurs de sang", "src": "Santé publique France / EFS, donneurs de sang 1992–2024", "year": "2025", "url": "https://www.santepubliquefrance.fr/sites/default/files/rdd/document/Surveillance_donneurs_1992_2024.pdf", "truth": "s", "period": "2004–2024"}, {"code": "MD4", "domain": "moral", "format": "trend", "label": "Bénévolat associatif des 15–34 ans", "src": "France Bénévolat / IFOP, Baromètre 2010–2025", "year": "2025", "url": "https://www.francebenevolat.org/sites/default/files/u19/synth%C3%A8se%20Barom%C3%A8tre%20France%20B%C3%A9n%C3%A9volat%202025.pdf", "truth": "h", "period": "2010–2025"}, {"code": "MD5", "domain": "moral", "format": "trend", "label": "Cannabis chez les jeunes de 17 ans", "src": "OFDT ESCAPAD 2022", "year": "2023", "url": "https://www.ofdt.fr/publication/2023/les-drogues-17-ans-analyse-de-l-enquete-escapad-2022-562", "truth": "b", "period": "2002–2022", "fem": 1}, {"code": "MD6", "domain": "moral", "format": "trend", "label": "Alcool dans le mois chez les jeunes de 17 ans", "src": "OFDT ESCAPAD 2022", "year": "2023", "url": "https://www.ofdt.fr/publication/2023/les-drogues-17-ans-analyse-de-l-enquete-escapad-2022-562", "truth": "b", "period": "2002–2022", "fem": 1}],
+    "3": [{"code": "C1", "domain": "coop", "format": "pct", "label": "Portefeuilles rendus (avec l'argent)", "src": "Cohn et al., Science", "year": "2019", "url": "https://www.science.org/doi/10.1126/science.aau8712", "truth": 58.0, "period": ""}, {"code": "C2", "domain": "coop", "format": "pct", "label": "Dons réguliers à des associations", "src": "Le Don en Confiance / Viavoice, Baromètre de la confiance dans les associations et fondations 2025", "year": "2025", "url": "https://www.donenconfiance.org/offres/file_inline_src/759/759_P_37784_691c850c4f5b5_5.pdf", "truth": 44.0, "period": ""}, {"code": "C3", "domain": "coop", "format": "pct", "label": "Fraude détectée parmi les allocataires contrôlés", "src": "CNAF, dossier de presse 5 mai 2025", "year": "2025", "url": "https://www.caf.fr/sites/default/files/medias/cnaf/Nous_connaitre/Presse/2025/250505%20DPLa%20lutte%20contre%20la%20fraude%20%C3%A0%20la%20Caf%20%C3%A9volue%20avec%20la%20solidarit%C3%A9%20%C3%A0%20la%20source%20et%20le%20SNLFE.pdf", "truth": 0.77, "period": ""}, {"code": "C4", "domain": "coop", "format": "pct", "label": "Fraude dans le métro et le RER (lignes RATP)", "src": "Île-de-France Mobilités, communiqué 13 février 2025", "year": "2025", "url": "https://presse.iledefrance-mobilites.fr/lancement-du-plan-contre-la-fraude-dans-les-transports-en-commun-franciliens/?lang=fr", "truth": 4.8, "period": ""}, {"code": "C5", "domain": "coop", "format": "pct", "label": "SMS/mails au volant", "src": "Ipsos bva pour la Fondation VINCI Autoroutes, 16e Baromètre de la conduite responsable 2026", "year": "2026", "url": "https://www.ipsos.com/sites/default/files/ct/news/documents/2026-05/Ipsos%20pour%20la%20Fondation%20Vinci%20Autoroutes%20-%20Barom%C3%A8tre%20de%20la%20conduite%20responsable%202026%20-%20%20FRANCE%20-%20Publication_0.pdf", "truth": 29.0, "period": ""}, {"code": "C6", "domain": "coop", "format": "pct", "label": "Tri des emballages et papiers", "src": "Citeo / Ipsos, Observatoire du geste de tri", "year": "2024", "url": "https://citoyens.citeo.com/wp-content/uploads/2025/11/202502_CITEO_INFOGRAPHIE_IDEES-RECUES.pdf", "truth": 86.0, "period": ""}, {"code": "C7", "domain": "coop", "format": "pct", "label": "Dons à une personne sans domicile fixe", "src": "Petit et al., PLoS ONE (HOME-EU)", "year": "2019", "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0221896", "truth": 59.0, "period": ""}, {"code": "C8", "domain": "coop", "format": "pct", "label": "Bénévolat associatif régulier", "src": "Recherches & Solidarités / IFOP, La France bénévole en 2026", "year": "2026", "url": "https://recherches-solidarites.org/wp-content/uploads/2026/05/La-France-benevole_26-05-2026.pdf", "truth": 19.0, "period": ""}, {"code": "SC1", "domain": "selfcontrol", "format": "pct", "label": "Bonnes résolutions tenues", "src": "FFEPGV / Ipsos bva, 15e Baromètre Sport-Santé, communiqué du 16 décembre 2025", "year": "2025", "url": "https://sportsante.fr/wp-content/uploads/2026/01/CP-2025-12-16_Bonnes-resolutions-2026_15e-Barometre-Sport-Sante-FFEPGV-IPSOS-bva.pdf", "truth": 58.0, "period": ""}, {"code": "SC2", "domain": "selfcontrol", "format": "pct", "label": "Consommation quotidienne d’alcool", "src": "OFDT, EROPP 2023", "year": "2023", "url": "https://www.ofdt.fr/sites/ofdt/files/2025-11/note-bilan-alcool-2024.pdf", "truth": 7.0, "period": ""}, {"code": "SC3", "domain": "selfcontrol", "format": "pct", "label": "Activité physique régulière de loisir", "src": "Santé publique France, Baromètre 2024", "year": "2024", "url": "https://www.santepubliquefrance.fr/sites/default/files/rdd/document/907050_spf00006351.pdf", "truth": 40.2, "period": ""}, {"code": "SC4", "domain": "selfcontrol", "format": "pct", "label": "Plus de 3 h d’écrans par jour (loisirs)", "src": "Santé publique France, Baromètre 2021", "year": "2021", "url": "https://beh.santepubliquefrance.fr/beh/2024/12/2024_12_1.html", "truth": 39.0, "period": ""}, {"code": "SC5", "domain": "selfcontrol", "format": "pct", "label": "Dry January (parmi les consommateurs d’alcool)", "src": "Toluna Harris Interactive pour Défi de janvier 2026", "year": "2026", "url": "https://www.france-assos-sante.org/wp-content/uploads/2026/02/Rapport-Toluna-Les-Francais-et-le-defi-de-janvier-France-Assos-Sante-Janvier-2026.pdf", "truth": 29.0, "period": ""}, {"code": "SC6", "domain": "selfcontrol", "format": "pct", "label": "Jeux d’argent au moins mensuels", "src": "OFDT, EROPP 2023 jeux d'argent", "year": "2023", "url": "https://www.ofdt.fr/sites/ofdt/files/2024-12/rapport-eropp-jah-2023.pdf", "truth": 24.46, "period": ""}, {"code": "MD1", "domain": "moral", "format": "trend", "label": "Taux d’homicides volontaires", "src": "UNODC / Banque mondiale", "year": "2023", "url": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5?locations=FR", "truth": "b", "period": "2003–2023"}, {"code": "MD2", "domain": "moral", "format": "trend", "label": "Vols de véhicules", "src": "SSMSI / Ministère de l'Intérieur", "year": "2025", "url": "https://statistiques.interieur.gouv.fr/ssmsi/publications/insecurite-et-delinquance-en-2024-bilan-statistique-et-atlas-departemental", "truth": "b", "period": "2004–2024"}, {"code": "MD3", "domain": "moral", "format": "trend", "label": "Donneurs de sang", "src": "Santé publique France / EFS, donneurs de sang 1992–2024", "year": "2025", "url": "https://www.santepubliquefrance.fr/sites/default/files/rdd/document/Surveillance_donneurs_1992_2024.pdf", "truth": "s", "period": "2004–2024"}, {"code": "MD4", "domain": "moral", "format": "trend", "label": "Bénévolat associatif des 15–34 ans", "src": "France Bénévolat / IFOP, Baromètre 2010–2025", "year": "2025", "url": "https://www.francebenevolat.org/sites/default/files/u19/synth%C3%A8se%20Barom%C3%A8tre%20France%20B%C3%A9n%C3%A9volat%202025.pdf", "truth": "h", "period": "2010–2025"}, {"code": "MD5", "domain": "moral", "format": "trend", "label": "Cannabis chez les jeunes de 17 ans", "src": "OFDT ESCAPAD 2022", "year": "2023", "url": "https://www.ofdt.fr/publication/2023/les-drogues-17-ans-analyse-de-l-enquete-escapad-2022-562", "truth": "b", "period": "2002–2022", "fem": 1}, {"code": "MD6", "domain": "moral", "format": "trend", "label": "Alcool dans le mois chez les jeunes de 17 ans", "src": "OFDT ESCAPAD 2022", "year": "2023", "url": "https://www.ofdt.fr/publication/2023/les-drogues-17-ans-analyse-de-l-enquete-escapad-2022-562", "truth": "b", "period": "2002–2022", "fem": 1}]};
+  var SECTIONS = [
+    ["coop", "Coopération", "Sur 100 adultes français, combien…"],
+    ["selfcontrol", "Habitudes", "Sur 100 adultes français, combien…"],
+    ["moral", "Évolutions", "Le phénomène a-t-il baissé, est-il resté stable, ou a-t-il augmenté ?"]
+  ];
+  var TREND = {b: "A baissé", s: "Est resté stable", h: "A augmenté"};
+  var TREND_F = {b: "A baissé", s: "Est restée stable", h: "A augmenté"};
+  var CAT_POS = {b: 0, s: 50, h: 100}, CAT_LAB = ["Baisse", "Stable", "Hausse"];
+
+  function fr(x){ return String(x).replace(".", ","); }
+  function trendText(it, v){ return (it.fem ? TREND_F : TREND)[v]; }
+
+  // ---- parse #v=1&r=58.44.x.…  (fragment only: never sent to the server)
+  function parse(){
+    var h = (location.hash || "").replace(/^#/, ""), p = {};
+    h.split("&").forEach(function(kv){ var i = kv.indexOf("="); if (i > 0) p[kv.slice(0, i)] = decodeURIComponent(kv.slice(i + 1)); });
+    var ver = p.v || "3", items = DATA[ver], issue = null;
+    if (!items){ items = DATA["3"]; issue = "Ce lien ne correspond à aucune version connue de l’enquête. Les données réelles s’affichent sans vos estimations."; }
+    if (issue) p.r = "";
+    var toks = (p.r || "").split(".");
+    if (!p.r){ issue = issue || "Ce lien ne contient pas vos estimations. Les données réelles s’affichent seules."; toks = []; }
+    else if (toks.length !== items.length){ issue = issue || "Ce lien est incomplet. Les estimations qui n’ont pas pu être lues apparaissent comme « non disponible »."; }
+    var est = items.map(function(it, i){
+      var t = toks[i];
+      if (t === undefined || t === "") return {v: null, miss: "na"};
+      if (t === "x") return {v: null, miss: "skip"};
+      if (it.format === "trend") return TREND[t] ? {v: t} : {v: null, miss: "na"};
+      if (!/^\d{1,3}$/.test(t) || +t > 100) return {v: null, miss: "na"};
+      return {v: +t};
+    });
+    return {ver: ver, items: items, est: est, issue: issue, dl: p.dl === "1"};
+  }
+  var S = parse();
+
+  function missText(e){ return e.miss === "skip" ? "non répondu" : "non disponible"; }
+  function yourText(it, e){
+    if (e.v === null) return missText(e);
+    return it.format === "trend" ? trendText(it, e.v) : e.v + " %";
+  }
+  function truthText(it){ return it.format === "trend" ? trendText(it, it.truth) : fr(it.truth) + " %"; }
+  function srcText(it){ return it.src.indexOf(it.year) >= 0 ? it.src : it.src + " (" + it.year + ")"; }
+  function pos(it, v){ return it.format === "trend" ? CAT_POS[v] : v; }
+
+  // ---- screen
+  function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function chart(it, e){
+    var c = el("div", "chart" + (it.format === "trend" ? " cat" : "")); c.setAttribute("aria-hidden", "true");
+    c.appendChild(el("div", "tr"));
+    (it.format === "trend" ? [0, 50, 100] : [0, 25, 50, 75, 100]).forEach(function(p){ var k = el("div", "tk"); k.style.left = p + "%"; c.appendChild(k); });
+    if (it.format === "trend") CAT_LAB.forEach(function(l, i){ var s = el("span", "cl", l); s.style.left = (i * 50) + "%"; if (i === 2){ s.style.left = "auto"; s.style.right = "0"; s.style.transform = "none"; } c.appendChild(s); });
+    var pt = pos(it, it.truth);
+    if (e.v !== null){
+      var py = pos(it, e.v), g = el("div", "gap");
+      g.style.left = Math.min(py, pt) + "%"; g.style.width = Math.abs(py - pt) + "%"; c.appendChild(g);
+    }
+    var mt = el("div", "m t" + (e.v !== null && Math.abs(pos(it, e.v) - pt) < 4 ? " big" : "")); mt.style.left = pt + "%"; c.appendChild(mt);
+    if (e.v !== null){ var my = el("div", "m y"); my.style.left = pos(it, e.v) + "%"; c.appendChild(my); }
+    return c;
+  }
+  function render(){
+    var mount = document.getElementById("mount"), toc = document.getElementById("toc");
+    if (S.issue){ var w = document.getElementById("warn"); w.textContent = S.issue; w.hidden = false; }
+    SECTIONS.forEach(function(sec){
+      var items = S.items.filter(function(it){ return it.domain === sec[0]; });
+      var box = el("section"); box.id = "s-" + sec[0];
+      var hh = el("div", "sec-h"); hh.appendChild(el("h2", null, sec[1])); hh.appendChild(el("span", "count", items.length + " questions")); box.appendChild(hh);
+      box.appendChild(el("p", "sub", sec[2]));
+      var ax = el("div", "grid axis"); ax.appendChild(el("div", null, "Comportement et source"));
+      var sc = el("div", "scale");
+      if (sec[0] !== "moral") ["0 %", "50 %", "100 %"].forEach(function(t, i){ var s = el("span", null, t); s.style.left = (i * 50) + "%"; sc.appendChild(s); });
+      ax.appendChild(sc); ax.appendChild(el("div", null, "Valeurs")); box.appendChild(ax);
+      var ta = el("a", null, sec[1]); ta.href = "#s-" + sec[0];
+      ta.addEventListener("click", function(ev){ ev.preventDefault(); box.scrollIntoView({behavior: "smooth", block: "start"}); });
+      toc.appendChild(ta);
+      S.items.forEach(function(it, i){
+        if (it.domain !== sec[0]) return;
+        var e = S.est[i], row = el("div", "grid item");
+        var left = el("div"), lab = el("div", "label", it.label);
+        if (it.period) lab.appendChild(el("span", "period", " (" + it.period + ")"));
+        left.appendChild(lab);
+        var s = el("span", "src"), a = el("a", null, srcText(it));
+        a.href = it.url; a.target = "_blank"; a.rel = "noopener noreferrer"; s.appendChild(a); left.appendChild(s);
+        var dl = el("dl", "vals");
+        dl.appendChild(el("dt", null, "Vous")); dl.appendChild(el("dd", e.v === null ? "na" : "vy", yourText(it, e)));
+        dl.appendChild(el("dt", null, "Réalité")); dl.appendChild(el("dd", "vt", truthText(it)));
+        row.appendChild(left); row.appendChild(chart(it, e)); row.appendChild(dl);
+        box.appendChild(row);
+      });
+      mount.appendChild(box);
+    });
+  }
+  render();
+
+  // ---- PDF (jsPDF, built on the device)
+  function pdfSafe(s){ // standard PDF fonts: keep to Latin-1
+    return String(s).replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/[–—]/g, "-")
+      .replace(/…/g, "...").replace(/œ/g, "oe").replace(/[  ]/g, " ");
+  }
+  function makePdf(){
+    var J = window.jspdf && window.jspdf.jsPDF;
+    if (!J){ window.print(); return; }
+    var doc = new J({unit: "mm", format: "a4", compress: true}), W = 210, H = 297, M = 14, y = M;
+    var C = {ink: [24, 32, 46], muted: [86, 96, 116], faint: [140, 148, 165], line: [230, 233, 239], soft: [246, 247, 250],
+             you: [31, 111, 178], link: [52, 78, 120], truth: [194, 65, 12], track: [221, 225, 232], gap: [184, 192, 205]};
+    var XL = M, WL = 74, XC = M + 80, WC = 54, XV = XC + WC + 8, XV2 = W - M;
+    function color(c){ doc.setTextColor(c[0], c[1], c[2]); }
+    function fill(c){ doc.setFillColor(c[0], c[1], c[2]); }
+    function draw(c){ doc.setDrawColor(c[0], c[1], c[2]); }
+    function page(need){ if (y + need > H - M - 8){ doc.addPage(); y = M; } }
+    function diamond(cx, cy, r){ doc.triangle(cx - r, cy, cx, cy - r, cx + r, cy, "F"); doc.triangle(cx - r, cy, cx, cy + r, cx + r, cy, "F"); }
+
+    // header band
+    fill(C.soft); doc.rect(0, 0, W, 44, "F");
+    doc.setFont("helvetica", "normal"); doc.setFontSize(7.5); color(C.muted);
+    doc.text(pdfSafe("ÉCOLE NORMALE SUPÉRIEURE · INSTITUT JEAN NICOD"), M, 12);
+    doc.setFont("times", "bold"); doc.setFontSize(21); color(C.ink);
+    doc.text(pdfSafe("Vos réponses et les données réelles"), M, 22);
+    doc.setFont("helvetica", "normal"); doc.setFontSize(9.5); color(C.muted);
+    var lede = doc.splitTextToSize(pdfSafe("Merci d’avoir participé à notre enquête. Pour chaque question, voici votre estimation, la valeur réelle et la source d’où elle vient."), W - 2 * M);
+    doc.text(lede, M, 29);
+    var ly = 29 + lede.length * 4.2 + 2;
+    fill(C.you); doc.circle(M + 1.6, ly - 1, 1.5, "F"); doc.setFontSize(8.5); color(C.ink); doc.text("Votre estimation", M + 5, ly);
+    fill(C.truth); diamond(M + 37, ly - 1, 1.7); doc.text(pdfSafe("Données réelles"), M + 40.5, ly);
+    y = 52;
+
+    SECTIONS.forEach(function(sec){
+      page(30);
+      doc.setFont("times", "bold"); doc.setFontSize(15); color(C.ink); doc.text(pdfSafe(sec[1]), M, y + 4);
+      doc.setFont("helvetica", "normal"); doc.setFontSize(8.5); color(C.muted); doc.text(pdfSafe(sec[2]), M, y + 9.5); y += 14;
+      // axis header
+      doc.setFontSize(6.8); color(C.faint);
+      doc.text(pdfSafe("COMPORTEMENT ET SOURCE"), XL, y + 2.5);
+      if (sec[0] !== "moral"){ doc.text("0 %", XC, y + 2.5); doc.text("50 %", XC + WC / 2, y + 2.5, {align: "center"}); doc.text("100 %", XC + WC, y + 2.5, {align: "right"}); }
+      doc.text("VALEURS", XV, y + 2.5); y += 4.5;
+      draw(C.line); doc.setLineWidth(0.3); doc.line(M, y, W - M, y);
+      S.items.forEach(function(it, i){
+        if (it.domain !== sec[0]) return;
+        var e = S.est[i];
+        doc.setFont("helvetica", "bold"); doc.setFontSize(9.5);
+        var lab = doc.splitTextToSize(pdfSafe(it.label + (it.period ? " (" + it.period + ")" : "")), WL);
+        doc.setFont("helvetica", "normal"); doc.setFontSize(7.6);
+        var src = doc.splitTextToSize(pdfSafe(srcText(it)), WL);
+        var hl = lab.length * 4.1 + src.length * 3.3 + 1;
+        var h = Math.max(hl, it.format === "trend" ? 12 : 9) + 6;
+        page(h);
+        var top = y + 4.6;
+        doc.setFont("helvetica", "bold"); doc.setFontSize(9.5); color(C.ink); doc.text(lab, XL, top);
+        var sy = top + lab.length * 4.1 - 0.6;
+        doc.setFont("helvetica", "normal"); doc.setFontSize(7.6); color(C.link); doc.text(src, XL, sy);
+        draw(C.link); doc.setLineWidth(0.15);
+        src.forEach(function(line, j){ var ly = sy + j * 3.3 + 0.7; doc.line(XL, ly, XL + doc.getTextWidth(line), ly);
+          doc.link(XL, ly - 3.1, doc.getTextWidth(line), 3.4, {url: it.url}); });
+        // chart
+        var cy = y + h / 2 - (it.format === "trend" ? 1.5 : 0);
+        fill(C.track); doc.rect(XC, cy - 0.35, WC, 0.7, "F");
+        draw(C.track); doc.setLineWidth(0.25);
+        (it.format === "trend" ? [0, 50, 100] : [0, 25, 50, 75, 100]).forEach(function(p){ doc.line(XC + WC * p / 100, cy - 1.6, XC + WC * p / 100, cy + 1.6); });
+        if (it.format === "trend"){
+          doc.setFontSize(6.5); color(C.faint);
+          doc.text("Baisse", XC, cy + 5); doc.text("Stable", XC + WC / 2, cy + 5, {align: "center"}); doc.text("Hausse", XC + WC, cy + 5, {align: "right"});
+        }
+        var xt = XC + WC * pos(it, it.truth) / 100;
+        if (e.v !== null){
+          var xy = XC + WC * pos(it, e.v) / 100;
+          fill(C.gap); doc.rect(Math.min(xy, xt), cy - 0.8, Math.abs(xy - xt), 1.6, "F");
+        }
+        var near = e.v !== null && Math.abs(xy - xt) < 3;
+        fill(C.truth); diamond(xt, cy, near ? 3 : 1.9);
+        if (e.v !== null){ fill([255, 255, 255]); doc.circle(xy, cy, 1.95, "F"); fill(C.you); doc.circle(xy, cy, 1.55, "F"); }
+        // values
+        var vy = y + h / 2 - 1;
+        doc.setFontSize(7.6); doc.setFont("helvetica", "normal"); color(C.faint);
+        doc.text("Vous", XV, vy); doc.text(pdfSafe("Réalité"), XV, vy + 4.4);
+        doc.setFontSize(9);
+        if (e.v === null){ doc.setFont("helvetica", "italic"); color(C.faint); } else { doc.setFont("helvetica", "bold"); color(C.you); }
+        doc.text(pdfSafe(yourText(it, e)), XV2, vy, {align: "right"});
+        doc.setFont("helvetica", "bold"); color(C.truth); doc.text(pdfSafe(truthText(it)), XV2, vy + 4.4, {align: "right"});
+        y += h;
+        draw(C.line); doc.setLineWidth(0.2); doc.line(M, y, W - M, y);
+      });
+      y += 8;
+    });
+    page(30);
+    doc.setFont("helvetica", "normal"); doc.setFontSize(7.8); color(C.muted);
+    [
+      "Les données réelles proviennent d’enquêtes et d’études publiées ; certaines reposent sur des déclarations des personnes interrogées. Les sources sont cliquables.",
+      "Ce document a été produit dans votre navigateur à partir du lien de la page de résultats ; vos estimations n’ont été ni transmises ni enregistrées.",
+      "Contact : Grégoire Darcy, gregoire.darcy@protonmail.com"
+    ].forEach(function(t){ var l = doc.splitTextToSize(pdfSafe(t), W - 2 * M); doc.text(l, M, y); y += l.length * 3.5 + 1.5; });
+    var n = doc.getNumberOfPages();
+    for (var k = 1; k <= n; k++){ doc.setPage(k); doc.setFont("helvetica", "normal"); doc.setFontSize(7.2); color(C.faint);
+      doc.text(pdfSafe("Vos réponses et les données réelles"), M, H - 8); doc.text(k + " / " + n, W - M, H - 8, {align: "right"}); }
+    doc.save("resultats-enquete.pdf");
+  }
+  document.getElementById("pdf").addEventListener("click", makePdf);
+
+  // ---- direct download (#…&dl=1, from the end-of-survey button): build the PDF on load, keep the page as fallback
+  if (S.dl){
+    try { history.replaceState(null, "", location.pathname + location.search + location.hash.replace(/&dl=1/, "").replace(/#dl=1&?/, "#")); } catch (err) {}
+    var note = document.getElementById("dlnote");
+    if (!S.issue){
+      note.textContent = "Le téléchargement de votre PDF a commencé. S’il ne démarre pas, utilisez le bouton « Télécharger le PDF » ci-dessus.";
+      note.hidden = false;
+      window.addEventListener("load", function(){ try { if (window.jspdf) makePdf(); } catch (err) {} });
+    }
+  }
+})();
+</script>
+</body>
+</html>
