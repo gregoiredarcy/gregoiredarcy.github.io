@@ -1,0 +1,22 @@
+# Unlisted study-materials pages (shared by link with reviewers): not for crawlers
+User-agent: *
+Allow: /
+Disallow: /materials/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /materials/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /materials/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /materials/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /materials/
+
+Sitemap: https://gregoiredarcy.github.io/sitemap.xml
